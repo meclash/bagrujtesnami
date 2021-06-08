@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+module.exports = {
+    theme: {
+      extend: {
+        scale: {
+          '-1': '-1'
+        }
+      }
+    }
+  }
