@@ -1,11 +1,20 @@
 module.exports = {
-  purge: [],
+  purge: {
+    enabled:true,
+    content: ["./public/**/*.html"],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "deeporang": "#e55942",
+      },
   },
+},
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("postcss-import"),
+  ],
 }

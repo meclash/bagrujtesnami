@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/tailwind.css">
     <title>Bagrujte s nami</title>
 </head>
 
@@ -12,12 +12,18 @@
 <body>
 
 
-    <div class="inset-0 bg-gradient-to-br from-black to-gray-800 opacity-90 absolute z-10"></div>
+    <div class="relative">
 
-        <video autoplay muted loop src="/media/mixkit-excavator-digging-in-the-ground-10161-medium.mp4" class="absolute flip-horizontal w-full h-full  object-cover -z-10"></video>
-
-        <header class="absolute top-0 left-0 right-0 z-20">
-            <nav class="container mx-auto px-6 md:px-12 py-4">
+        <div class="inset-0 absolute z-5"> 
+            <video autoplay muted loop src="/media/mixkit-excavator-digging-in-the-ground-10161-medium.mp4" 
+                class=" w-full h-full object-cover">
+            </video>
+        </div>
+        
+        <div class="inset-0 bg-gradient-to-br from-black via-black to-gray-900 opacity-60 absolute z-10"></div>
+  
+        <header class="relative  z-20">
+            <nav class="container mx-auto px-6 md:px-0 pt-6">
                 <div class="md:flex justify-between items-center max-w-7xl">
                     <div class="flex justify-between items-center">
                         <a href="#" class="text-white">
@@ -31,7 +37,7 @@
                             </svg>
                         </a>
                         <div class="md:hidden">
-                            <button class="text-white focus:outline-none">
+                            <button class="text-gray-100 focus:outline-none">
                                 <svg class="h-12 w-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     </path>
@@ -40,30 +46,31 @@
                         </div>
                     </div>
                     <div class="hidden md:flex items-center">
-                        <a class="text-base font-bold uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
+                        <a class="text-base font-bold uppercase mx-3 text-gray-100 cursor-pointer hover:text-gray-300">
                             O nás
                         </a>
-                        <a class="text-base font-bold uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
+                        <a class="text-base font-bold uppercase mx-3 text-gray-100 cursor-pointer hover:text-gray-300">
                             Služby
                         </a>
-                        <a class="text-base font-bold uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
+                        <a class="text-base font-bold uppercase mx-3 text-gray-100 cursor-pointer hover:text-gray-300">
                             Kontakt
                         </a>
                     </div>
                 </div>
             </nav>
+
         </header>
 
 
-        <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
-            <div class="lg:w-3/5 xl:w-2/5 flex flex-col items-start relative z-10">
+        <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-24 xl:py-32  xl:max-w-7xl">
+            <div class="lg:w-3/5 xl:w-3/5 flex flex-col items-start relative z-10">
                 <span class="font-bold uppercase text-yellow-400">
                     Bagrujte s nami
                 </span>
                 <h1 class="font-bold text-5xl sm:text-7xl text-gray-100 leading-tight mt-4">
-                    Profesionálne zemné a výkopové práce
+                    <span>Profesionálne zemné a výkopové práce</span> 
                 </h1>
-                <a href="#" class="block bg-white hover:bg-gray-100 py-2 px-3 rounded-lg text-base text-gray-800 font-bold uppercase mt-10">
+                <a href="#" class="block  bg-gradient-to-r to-red-400 from-yellow-500  b py-2 px-4 rounded-lg text-base text-gray-100 font-bold uppercase mt-10">
                     Objednaj
                 </a>
 
@@ -72,6 +79,87 @@
 
 
     </div>
+
+    <section class="text-gray-600 body-font bg-deeporange">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Na čo sa špecializujeme?</h1>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bunker</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Ramona Falls</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
     
     
 
