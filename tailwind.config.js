@@ -1,13 +1,16 @@
 module.exports = {
   purge: {
-    enabled:true,
-    content: ["./public/**/*.html"],
+   
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors:{
-        "deeporang": "#e55942",
+        "deeporanginoooooo": "#e55942",
+      },
+
+      scale: {
+        "-1": "-1",
       },
   },
 },
