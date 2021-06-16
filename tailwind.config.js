@@ -1,23 +1,14 @@
 module.exports = {
-  purge: {
-   
-  },
+  mode: "jit",
+  purge: ["./public/**/*index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors:{
-        "deeporanginoooooo": "#e55942",
-      },
-
-      scale: {
-        "-1": "-1",
-      },
+      
+    },
   },
-},
   variants: {
     extend: {},
   },
-  plugins: [
-    require("postcss-import"),
-  ],
+  plugins: [],
 }
