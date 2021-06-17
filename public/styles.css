@@ -620,6 +620,9 @@ video {
 .-m-1 {
 	margin: -0.25rem;
 }
+.-m-2 {
+	margin: -0.5rem;
+}
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
@@ -631,6 +634,10 @@ video {
 .my-6 {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
+}
+.my-5 {
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
 }
 .mr-2 {
 	margin-right: 0.5rem;
@@ -679,6 +686,12 @@ video {
 }
 .mt-3 {
 	margin-top: 0.75rem;
+}
+.mb-12 {
+	margin-bottom: 3rem;
+}
+.ml-4 {
+	margin-left: 1rem;
 }
 .block {
 	display: block;
@@ -811,6 +824,9 @@ video {
 .border-0 {
 	border-width: 0px;
 }
+.border-t {
+	border-top-width: 1px;
+}
 .border-purple-600 {
 	--tw-border-opacity: 1;
 	border-color: rgba(124, 58, 237, var(--tw-border-opacity));
@@ -818,6 +834,10 @@ video {
 .border-gray-300 {
 	--tw-border-opacity: 1;
 	border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+}
+.border-gray-200 {
+	--tw-border-opacity: 1;
+	border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 .bg-gray-100 {
 	--tw-bg-opacity: 1;
@@ -924,6 +944,9 @@ video {
 .p-8 {
 	padding: 2rem;
 }
+.p-2 {
+	padding: 0.5rem;
+}
 .px-6 {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -978,6 +1001,9 @@ video {
 .pt-24 {
 	padding-top: 6rem;
 }
+.pt-8 {
+	padding-top: 2rem;
+}
 .text-center {
 	text-align: center;
 }
@@ -1005,6 +1031,10 @@ video {
 	font-size: 0.75rem;
 	line-height: 1rem;
 }
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
 .font-bold {
 	font-weight: 700;
 }
@@ -1031,6 +1061,9 @@ video {
 }
 .leading-6 {
 	line-height: 1.5rem;
+}
+.leading-normal {
+	line-height: 1.5;
 }
 .tracking-widest {
 	letter-spacing: 0.1em;
@@ -1176,6 +1209,10 @@ video {
 	--tw-border-opacity: 1;
 	border-color: rgba(99, 102, 241, var(--tw-border-opacity));
 }
+.focus\:bg-white:focus {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
 .focus\:outline-none:focus {
 	outline: 2px solid transparent;
 	outline-offset: 2px;
@@ -1224,6 +1261,11 @@ video {
 		font-size: 3rem;
 		line-height: 1;
 	}
+
+	.sm\:text-3xl {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
 }
 @media (min-width: 768px) {
 
@@ -1254,6 +1296,10 @@ video {
 
 	.md\:w-1\/2 {
 		width: 50%;
+	}
+
+	.md\:w-2\/3 {
+		width: 66.666667%;
 	}
 
 	.md\:flex-row {
