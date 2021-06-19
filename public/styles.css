@@ -1116,6 +1116,10 @@ video {
 	--tw-text-opacity: 1;
 	color: rgba(248, 113, 113, var(--tw-text-opacity));
 }
+.antialiased {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 .opacity-50 {
 	opacity: 0.5;
 }
@@ -1313,6 +1317,16 @@ video {
 	.md\:py-8 {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
+	}
+
+	.md\:text-4xl {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+
+	.md\:text-5xl {
+		font-size: 3rem;
+		line-height: 1;
 	}
 }
 @media (min-width: 1024px) {
