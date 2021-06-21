@@ -11,14 +11,10 @@ module.exports = {
       
       
 
-
     }),
 
       colors:{
-        harvest: "#E79407",
         brandyellow: "#F3FF4A",
-        quicksilver: "#A1A0A2",
-        spacecadet: "#2B2D42",
 
       },
     },
