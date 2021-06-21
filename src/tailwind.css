@@ -10,6 +10,6 @@
 
 @supports not (backdrop-filter: blur(12px)) {
     .textbox {
-        --tw-bg-opacity: 0.9;
+        --tw-bg-opacity: 0.95;
     }
 }

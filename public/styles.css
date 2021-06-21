@@ -698,12 +698,6 @@ video {
 .mb-6 {
 	margin-bottom: 1.5rem;
 }
-.mr-1 {
-	margin-right: 0.25rem;
-}
-.mt-2 {
-	margin-top: 0.5rem;
-}
 .ml-3 {
 	margin-left: 0.75rem;
 }
@@ -737,9 +731,6 @@ video {
 .h-32 {
 	height: 8rem;
 }
-.h-5 {
-	height: 1.25rem;
-}
 .w-full {
 	width: 100%;
 }
@@ -761,20 +752,20 @@ video {
 .w-1\/2 {
 	width: 50%;
 }
-.w-5 {
-	width: 1.25rem;
-}
 .max-w-2xl {
 	max-width: 42rem;
 }
 .max-w-6xl {
 	max-width: 72rem;
 }
-.max-w-7xl {
-	max-width: 80rem;
-}
 .max-w-3xl {
 	max-width: 48rem;
+}
+.max-w-5xl {
+	max-width: 64rem;
+}
+.max-w-7xl {
+	max-width: 80rem;
 }
 .cursor-pointer {
 	cursor: pointer;
@@ -1076,12 +1067,6 @@ video {
 	outline: 2px solid transparent;
 	outline-offset: 2px;
 }
-.ring-offset-2 {
-	--tw-ring-offset-width: 2px;
-}
-.ring-offset-current {
-	--tw-ring-offset-color: currentColor;
-}
 .backdrop-blur-3xl {
 	--tw-backdrop-blur: blur(64px);
 	-webkit-backdrop-filter: var(--tw-backdrop-filter);
@@ -1112,7 +1097,7 @@ video {
 
 @supports not ((-webkit-backdrop-filter: blur(12px)) or (backdrop-filter: blur(12px))) {
     .textbox {
-        --tw-bg-opacity: 0.9;
+        --tw-bg-opacity: 0.95;
     }
 }
 
@@ -1168,12 +1153,12 @@ video {
 
 @media (min-width: 640px) {
 
-	.sm\:ml-auto {
-		margin-left: auto;
+	.sm\:inline {
+		display: inline;
 	}
 
-	.sm\:mt-0 {
-		margin-top: 0px;
+	.sm\:hidden {
+		display: none;
 	}
 
 	.sm\:h-1\/4 {
@@ -1233,10 +1218,6 @@ video {
 
 	.md\:w-2\/3 {
 		width: 66.666667%;
-	}
-
-	.md\:flex-row {
-		flex-direction: row;
 	}
 
 	.md\:p-2 {
