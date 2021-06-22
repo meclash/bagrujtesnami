@@ -8,6 +8,7 @@ module.exports = {
 
       'grasspattern': "url('../media/grass-3.webp')",
       'rockpattern': "url('../media/sand.webp')",
+      'claypattern': "url('../media/clay.webp')",
       
       
 
