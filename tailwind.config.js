@@ -6,8 +6,8 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
 
-      'grasspattern': "url('../media/grass-3.webp')",
-      'rockpattern': "url('../media/sand.webp')",
+      'grasspattern': "url('../media/grass-2.webp')",
+      'rockpattern': "url('../media/sand2.webp')",
       'claypattern': "url('../media/clay.webp')",
       
       

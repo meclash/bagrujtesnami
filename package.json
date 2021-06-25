@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev":"TAILWIND_MODE=watch NODE_ENV=development postcss ./src/tailwind.css -o ./public/styles.css -w --verbose",
-    "build":"postcss ./src/tailwind.css -o ./public/styles.css --verbose"
+    "build":"TAILWIND_MODE=watch NODE_ENV=development postcss ./src/tailwind.css -o ./public/styles.css --verbose"
   },
   "keywords": [],
   "author": "",

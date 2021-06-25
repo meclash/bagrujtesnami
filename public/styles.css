@@ -767,6 +767,11 @@ video {
 }
 
 
+.grid {
+	display: grid;
+}
+
+
 .hidden {
 	display: none;
 }
@@ -789,6 +794,11 @@ video {
 
 .h-10 {
 	height: 2.5rem;
+}
+
+
+.h-48 {
+	height: 12rem;
 }
 
 
@@ -862,6 +872,11 @@ video {
 }
 
 
+.grid-cols-2 {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
 .flex-row {
 	flex-direction: row;
 }
@@ -887,6 +902,11 @@ video {
 }
 
 
+.justify-start {
+	justify-content: flex-start;
+}
+
+
 .justify-center {
 	justify-content: center;
 }
@@ -894,6 +914,11 @@ video {
 
 .justify-between {
 	justify-content: space-between;
+}
+
+
+.justify-items-start {
+	justify-items: start;
 }
 
 
@@ -1002,12 +1027,12 @@ video {
 
 
 .bg-grasspattern {
-	background-image: url('../media/grass-3.webp');
+	background-image: url('../media/grass-2.webp');
 }
 
 
 .bg-rockpattern {
-	background-image: url('../media/sand.webp');
+	background-image: url('../media/sand2.webp');
 }
 
 
@@ -1176,6 +1201,11 @@ video {
 }
 
 
+.text-left {
+	text-align: left;
+}
+
+
 .text-center {
 	text-align: center;
 }
@@ -1223,6 +1253,11 @@ video {
 
 .font-medium {
 	font-weight: 500;
+}
+
+
+.font-semibold {
+	font-weight: 600;
 }
 
 
@@ -1347,6 +1382,20 @@ video {
 }
 
 
+.backdrop-blur-sm {
+	--tw-backdrop-blur: blur(4px);
+	-webkit-backdrop-filter: var(--tw-backdrop-filter);
+	        backdrop-filter: var(--tw-backdrop-filter);
+}
+
+
+.backdrop-blur-lg {
+	--tw-backdrop-blur: blur(16px);
+	-webkit-backdrop-filter: var(--tw-backdrop-filter);
+	        backdrop-filter: var(--tw-backdrop-filter);
+}
+
+
 .transition-colors {
 	transition-property: background-color, border-color, color, fill, stroke;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1447,12 +1496,12 @@ video {
 		display: none;
 	}
 
-	.sm\:h-1\/4 {
-		height: 25%;
-	}
-
 	.sm\:w-1\/2 {
 		width: 50%;
+	}
+
+	.sm\:grid-cols-3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 
 	.sm\:flex-row {
@@ -1461,10 +1510,6 @@ video {
 
 	.sm\:items-stretch {
 		align-items: stretch;
-	}
-
-	.sm\:justify-around {
-		justify-content: space-around;
 	}
 
 	.sm\:gap-x-4 {
@@ -1502,12 +1547,12 @@ video {
 		display: none;
 	}
 
-	.md\:w-full {
-		width: 100%;
-	}
-
 	.md\:w-1\/2 {
 		width: 50%;
+	}
+
+	.md\:w-full {
+		width: 100%;
 	}
 
 	.md\:w-2\/3 {
@@ -1530,8 +1575,8 @@ video {
 		width: 50%;
 	}
 
-	.lg\:max-w-2xl {
-		max-width: 42rem;
+	.lg\:max-w-3xl {
+		max-width: 48rem;
 	}
 
 	.lg\:items-center {
